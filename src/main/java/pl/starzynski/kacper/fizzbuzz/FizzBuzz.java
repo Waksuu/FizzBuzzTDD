@@ -39,17 +39,17 @@ class FizzBuzz {
         }
     }
 
-    private boolean dividesByThree(int fizzBuzzNumericValue) {
-        return fizzBuzzNumericValue % 3 == 0;
+    private void setNumericValue(int i) {
+        fizzBuzzNumericValue = i + 1;
+        fizzBuzzMatrix[i] = fizzBuzzNumericValue;
     }
 
     private boolean dividesByFive(int fizzBuzzNumericValue) {
         return fizzBuzzNumericValue % 5 == 0;
     }
 
-    private void setNumericValue(int i) {
-        fizzBuzzNumericValue = i + 1;
-        fizzBuzzMatrix[i] = fizzBuzzNumericValue;
+    private boolean dividesByThree(int fizzBuzzNumericValue) {
+        return fizzBuzzNumericValue % 3 == 0;
     }
 
     class InvalidMatrixSizeException extends RuntimeException {
